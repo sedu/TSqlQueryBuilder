@@ -1,0 +1,6 @@
+.vs/*
+packages/*
+TSqlQueryBuilder/bin/*
+TSqlQueryBuilder/obj/*
+TSqlQueryBuilder.Tests/bin/*
+TSqlQueryBuilder.Tests/obj/*
