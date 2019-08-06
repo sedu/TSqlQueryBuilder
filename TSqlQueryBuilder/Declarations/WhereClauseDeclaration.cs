@@ -18,8 +18,8 @@ namespace TSqlQueryBuilder {
         public WhereDeclaration<TSource> In<P>(Expression<Func<TSource, P>> memberExpression, IEnumerable<P> value) {
             return In<TSource, P>(memberExpression, value);
         }
-        public WhereDeclaration<TSource> In<TCoustom, TValue>(Expression<Func<TCoustom, TValue>> memberExpression, IEnumerable<TValue> value) {
-            InClause<TCoustom, TValue> clause = new InClause<TCoustom, TValue>(memberExpression, value);
+        public WhereDeclaration<TSource> In<TCustom, TValue>(Expression<Func<TCustom, TValue>> memberExpression, IEnumerable<TValue> value) {
+            InClause<TCustom, TValue> clause = new InClause<TCustom, TValue>(memberExpression, value);
             _clauses.Add(clause);
             return this;
         }
